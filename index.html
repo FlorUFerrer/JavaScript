@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> 
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+   <title>Coder House</title>
+</head>
+<body >
+    
+<header>
+    <nav class="navbar navbar-light nav-fondo ">
+        <div class="container-fluid">
+            <a class="navbar-brand fade-in"></a>
+            <form class="d-flex">
+                <input class="form-control me-2 card-filter" type="search" name ="buscador" id="search"placeholder="Buscar..." aria-label="Search">
+            </form>
+            <button class="switch" id= "switch">
+                <span ><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+            </button>
+        </div>
+
+    </nav>
+</header>
+     
+      <!-- PRINCIPIO TIEDA  -->
+   <div class ="cards container " id="article-productos"> </div> 
+        <!-- FIN TIEDA  -->
+
+
+        <!-- PRINCIPIO CARRITO -->
+    <section class="container" >
+        <div>
+            <h1 class ="titulo-carrito">CARRITO</h1>
+                            <div class="contenedor-items-carrito"style="border-bottom: 1px solid #ccc">
+                                <p class="items-carrito">Producto</p>
+                                <p class="items-carrito">Precio</p>
+                                <p class="items-carrito">Cantidad</p>
+                               <div>
+                                   <p class="items-carrito total-producto">Total a pagar</p>
+                                   <p class ="total-pagar">$0</p>
+                                </div>
+                            </div>
+        </div>
+    </section>
+
+    <section  class="container carrito" ></section>
+            
+    
+    
+    <!-- FIN CARRITO -->
+    
+    <!-- BOTON DE IR HACIA ARRIBA -->
+    
+    <div class="btn-container">
+        <div class="btn-up pull-right">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+    <!-- FIN ARRIBA -->
+    
+
+
+
+   <!-- START FOOTER -->
+   <footer class="bg-dark p-3 mt-5">
+    <p class="text-center m-0 text-muted">Tienda de impresiones 3D</p>
+
+
+    <div>
+        <form id= "imput-Form">
+            
+            <div class="espacios">
+                <label >Nombre</label>
+                <input type="text" autocomplete="off" id =imput-name>
+            </div>
+            
+            <div class="espacios">
+                <label >E-mail</label>
+                <input type="email" autocomplete="off" id =imput-email>
+            </div>
+            <div class="espacios">
+                <label >Telefono</label>
+                <input type="tel" autocomplete="off" id =imput-tel>
+            </div>
+            <div class="espacios">
+                <p>¿Querés recibir nuestras ofertas?</p>
+                <input type="checkbox" id="imput-Check">
+            </div>
+            <div class="espacios">
+                 
+                <button type="submit" id="imput-enviar">Enviar</button>
+        </form>
+
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="index.js" type="module" ></script>
+<script src="buscador.js "></script>
+<script src="contactos.js" ></script>
+<script src="productos.js" ></script>
+<script src="carrito.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
